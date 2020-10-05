@@ -20,6 +20,9 @@ function App() {
 
   return (
     <div className="container mx-auto">
+      <h1 className="text-5xl text-center mx-auto w-full font-black text-teal-500 
+      transition duration-500 ease-in-out hover:text-6xl transform hover:-translate-y-1 hover:scale-110 cursor-default">Image Search from Pixabay</h1>
+
       <ImageSearch searchText={(text) => setTerm(text)}/>
 
       {!isLoading && images.length === 0 && <h1 className="text-5xl text-center mx-auto mt-32">No Images Found. Please Try Another Search</h1>}
